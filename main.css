@@ -1,0 +1,40 @@
+body{
+    background-color: gray;
+    font-color: green;
+}
+
+.name {
+    font-family: 'Acme', sans-serif;
+    font-size: 25pt;
+    text-align: center;
+    margin: 5pt;
+}
+
+.username {
+    font-family: 'Acme', sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    text-decoration: underline;
+    margin: 5pt;
+}
+
+
+.location{
+    font-family: 'Acme'; sans-serif;
+    text-align: center;
+    font-size: 15pt;
+    text-decoration: italic;
+    margin: 5pt;
+}
+
+img{
+    display: flex;
+    align-items: center;
+    resize: 30%;
+    align-items: center;
+    border: 50%;
+}
+
+.repos{
+    font-family: 'Acme'; sans-serif;
+}
