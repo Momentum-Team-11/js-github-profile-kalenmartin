@@ -21,18 +21,24 @@ let name = document.createElement('h3')
 name.innerText = data.name
 root.appendChild(name)
 
+let avatar_url = 
+
 root.innerHTML = `
-<p class="name">Name: ${data.name}</p>
-<p class="username"> Username: ${data.login}</p>
-<p class="location">Location: ${data.location}</p>
-<img src=${data.avatar_url}/>
-<p class ="website">Website: ${data.blog}</p>
+<p class="name">${data.name}</p>
+<p class="username">@${data.login}</p>
+<p class="location">${data.location}</p>
+<img src=${"https://avatars.githubusercontent.com/u/98348889?v=4"} alt="Kalen avatar" class="center"/>
+<p class ="website">${"https://www.kalenmartin.com/"}</p>
+    <button>kalenmartin.com</button>
 <p class="followers">Followers: ${data.followers}</p>
 <p class="following">Following: ${data.following}</p>
-    <p class="GitHub Repos">GitHub Repos</p>
-<a href="helloWorld">${data.repos_url}/ 
+<p>GitHub Repos</p>
+
+<p class=repos> <a href="helloWorld${data.repos_url}/
+    <button>helloWorld</button>
     <br>
-<a href="patchwork">${data.repos_url}/`
+<p class=repos> <a href="patchwork"${data.repos_url}/
+    <button>patchwork</button>`
 
     })
 

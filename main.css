@@ -1,9 +1,12 @@
 body{
-    background-color: rgb(94, 121, 107);
+    background-color: rgb(102, 114, 108);
+    border-color: white;
+    border-width: 5%;
+    border-style: inset;
 }
 
-.root{
-    justify-content: center;
+#root{
+    color:black;
 }
 
 .name {
@@ -15,7 +18,7 @@ body{
 
 .username {
     font-family: 'Permanent Marker';
-    font-size: 30pt;
+    font-size: 25pt;
     text-align: center;
     text-decoration: underline;
     margin: 5pt;
@@ -30,33 +33,36 @@ body{
 
 .followers {
     font-family: 'Permanent Marker';
-    text-align: center;
     font-size: 15pt;
     margin: 5pt;
 }
 
 .following{
     font-family: 'Permanent Marker';
-    text-align: center;
     font-size: 15pt;
     margin: 5pt;
 }
 
 img{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    display: block;
+    margin:auto;
+    margin-top: 5%;
+    margin-bottom: 9%;
+    max-height: 25%;
     max-width: 50%;
-    max-height: 50%;
-    border-radius: 15%;
+    border-radius: 9%;
 }
 
 .website{
-    font-family: 'Permanent Marker';
-    text-align: center;
+    display: none;
 }
 
 
-.repos{
-    font-family: 'Acme'; sans-serif;
-}
+.button{
+    display: block;
+    margin:auto;
+    margin-top: 5%;
+    margin-bottom: 9%;
+    max-height: 25%;
+    max-width: 50%;
+    border-radius: 9%;
