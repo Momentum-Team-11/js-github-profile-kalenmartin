@@ -4,7 +4,7 @@ fetch('https://api.github.com/users/kalenmartin')
     .then((data) => {
 
 //>result< NOT response! 
-
+//document.querySelector(' # <- needs to have a hash to work!  ')
 
     document.querySelector('#root').innerHTML +=
 
