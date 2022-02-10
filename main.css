@@ -1,68 +1,66 @@
 body{
     background-color: rgb(102, 114, 108);
     border-color: white;
-    border-width: 5%;
-    border-style: inset;
+    border-width: 15%;
 }
 
-#root{
-    color:black;
+.root{
+    display: flex;
+    align-content: center;
+    border: 10pt;
+    border-color: black;
 }
 
-.name {
-    font-family: 'Permanent Marker';
-    font-size: 25pt;
-    text-align: center;
-    margin: 5pt;
+h2{
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    font-size: 30pt;
+    margin-top: 10px;
+    text-shadow: 10%;
+    text-emphasis: 7;
+    text-justify: newspaper;
 }
 
-.username {
-    font-family: 'Permanent Marker';
-    font-size: 25pt;
-    text-align: center;
+.name{
+    align-items: center;
+}
+
+.profile-pic{
+    display: inline-block;
+    align-content: center;
+    margin-bottom: 20pt;
+    padding-left: 10%;
+    border-width: 10px;
+}
+
+.avatar{
+    width: 50%;
+    height: 50%;
+}
+
+.profile{
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 10pt;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    font-size: 15pt;
+}
+
+#repos{
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    font-size: 13pt;
+    border: 5px;
+}
+
+h3{
+    font-family: 'Permanent Marker', cursive;
+    color: black;
     text-decoration: underline;
-    margin: 5pt;
 }
 
-.location{
-    font-family: 'Permanent Marker';
-    text-align: center;
-    font-size: 15pt;
-    margin: 5pt;
+.a{
+    font-family: 'Permanent Marker', cursive;
+    color: black;
 }
-
-.followers {
-    font-family: 'Permanent Marker';
-    font-size: 15pt;
-    margin: 5pt;
-}
-
-.following{
-    font-family: 'Permanent Marker';
-    font-size: 15pt;
-    margin: 5pt;
-}
-
-img{
-    display: block;
-    margin:auto;
-    margin-top: 5%;
-    margin-bottom: 9%;
-    max-height: 25%;
-    max-width: 50%;
-    border-radius: 9%;
-}
-
-.website{
-    display: none;
-}
-
-
-.button{
-    display: block;
-    margin:auto;
-    margin-top: 5%;
-    margin-bottom: 9%;
-    max-height: 25%;
-    max-width: 50%;
-    border-radius: 9%;

@@ -6,7 +6,7 @@ fetch('https://api.github.com/users/kalenmartin')
 //>result< NOT response! 
 
 
-        document.querySelector('#root').innerHTML +=
+    document.querySelector('#root').innerHTML +=
 
 //        console.log(root);
 //        console.log(root.innerHTML)
@@ -19,10 +19,12 @@ fetch('https://api.github.com/users/kalenmartin')
 // root.appendChild(h3El)
 // console.log(h3El)
 
-    `<div class="header-img">
-        <img id="avatar" src=${data.avatar_url}>
+    `<h2>${data.name}</h2>
+
+    <div class="profile-pic">
+        <img avatar src=${data.avatar_url} >
     </div>
-    <h2>${data.name}</h2>
+
     <div class="profile">
         <p>GitHub Username: ${data.login}</p>
         <p>GitHub URL: <a href=${data.url}>${data.name}</a></p>
@@ -30,24 +32,24 @@ fetch('https://api.github.com/users/kalenmartin')
         <p>Following: ${data.following}</p>
         <p>Followers: ${data.followers}</p>
         <p>Website: <a href=${data.blog}>${data.name}</a></p>
-        </div>`
+    </div>`
 
     return data.repos_url
 })
 
 
-.then((reposUrl) => fetch(reposUrl))
-.then((result) => result.json())
-.then((data) => {
+    .then((reposUrl) => fetch(reposUrl))
+    .then((result) => result.json())
+    .then((data) => {
 
     console.log(data)
     document.querySelector('#root').innerHTML +=
         `<div id="repos">
-        <h3>GitHub Repos</h3>
+            <h3>GitHub Repos</h3>
         </div>`
 
     for(let repo of data) {
-        document.querySelector('#root').innerHTML +=
+    document.querySelector('#root').innerHTML +=
         `<p><a href=${repo.url}>${repo.name}</a></p>`
     }
 })
